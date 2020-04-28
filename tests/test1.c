@@ -190,6 +190,9 @@ int main(int argc, char **argv)
 #ifdef TEST_FORMATTED
 	int sflags = 0;
 #endif
+#ifdef __TRUSTINSOFT_HELPER__
+        json_global_set_string_hash (JSON_C_STR_HASH_PERLLIKE);
+#endif
 
 	MC_SET_DEBUG(1);
 
