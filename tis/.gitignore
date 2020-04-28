@@ -1,0 +1,4 @@
+*.config_generated.json
+build
+!build/compile_commands.json
+!build/*.h
