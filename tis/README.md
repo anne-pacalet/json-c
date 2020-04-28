@@ -5,7 +5,8 @@ $ PROJECT_ROOT=$PWD
 $ mkdir tis && cd tis
 $ mkdir build && cd build
 $ VALGRIND=1 cmake ../.. -DCMAKE_EXPORT_COMPILE_COMMANDS=On
-$ sed -i config.h -e '/HAVE_XLOCALE_H/d'
+$ sed -i config.h -e '/HAVE_XLOCALE_H/d' \
+                  -e '/HAVE_USELOCALE/d'
 $ make
 $ make USE_VALGRIND=0 test
 ```

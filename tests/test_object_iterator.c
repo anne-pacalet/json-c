@@ -6,6 +6,9 @@
 #include "json_object.h"
 #include "json_object_iterator.h"
 #include "json_tokener.h"
+#ifdef __TRUSTINSOFT_HELPER__
+#include "linkhash.h"
+#endif
 
 int main(int atgc, char **argv)
 {
@@ -23,6 +26,9 @@ int main(int atgc, char **argv)
 	struct json_object_iterator it;
 	struct json_object_iterator itEnd;
 
+#ifdef __TRUSTINSOFT_HELPER__
+        json_global_set_string_hash (JSON_C_STR_HASH_PERLLIKE);
+#endif
 	it = json_object_iter_init_default();
 	new_obj = json_tokener_parse(input);
 	it = json_object_iter_begin(new_obj);

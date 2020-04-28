@@ -122,7 +122,6 @@
 #define HAVE_STRNCASECMP 1
 
 /* Define to 1 if you have the `uselocale' function. */
-#define HAVE_USELOCALE
 
 /* Define to 1 if you have the `vasprintf' function. */
 #define HAVE_VASPRINTF
