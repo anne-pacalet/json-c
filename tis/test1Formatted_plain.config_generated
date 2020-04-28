@@ -1,0 +1,16 @@
+[
+    {
+        "compilation_database": [
+            "build_json"
+        ],
+        "files": [
+            "../tests/test1.c",
+            "../json_object.c",
+            "../printbuf.c",
+            "../arraylist.c"
+        ],
+        "raw_options": {
+            "-val-args": " plain"
+        }
+    }
+]
