@@ -1,4 +1,5 @@
 *.config_generated.json
+tis-mkfs-*.[ch]
 build
 !build/compile_commands.json
 !build/*.h
