@@ -40,7 +40,7 @@ extern "C" {
 /**
  * sentinel pointer value for empty slots
  */
-#ifdef __TRUSTINSOFT_HELPER__
+#ifdef __TRUSTINSOFT_BUGFIX__
 extern int tis_lh_empty;
 #define LH_EMPTY (void *)(&tis_lh_empty)
 #else
@@ -50,7 +50,7 @@ extern int tis_lh_empty;
 /**
  * sentinel pointer value for freed slots
  */
-#ifdef __TRUSTINSOFT_HELPER__
+#ifdef __TRUSTINSOFT_BUGFIX__
 extern int tis_lh_freed;
 #define LH_FREED (void *)(&tis_lh_freed)
 #else
