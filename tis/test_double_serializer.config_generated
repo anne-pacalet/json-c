@@ -1,0 +1,13 @@
+[
+    {
+        "compilation_database": [
+            "build"
+        ],
+        "files": [
+            "tis_stubs.c",
+            "../tests/test_double_serializer.c",
+            "../json_object.c",
+            "../printbuf.c"
+        ]
+    }
+]
