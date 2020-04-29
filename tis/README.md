@@ -35,3 +35,8 @@ $ tis-analyzer -tis-config-load tis.config -tis-config-select 1 --interpreter
 
 Some tests requires `TIS_ADVANCED_FLOAT=1`:
 - `test_cast`
+
+Even with `TIS_ADVANCED_FLOAT=1`, some tests stop because they need
+`__builtin_isnan`:
+- `test_double_serializer`
+- `test_float`
