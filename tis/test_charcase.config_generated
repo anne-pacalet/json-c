@@ -4,12 +4,10 @@
             "build"
         ],
         "files": [
-            "../tests/test_cast.c",
+            "../tests/test_charcase.c",
             "../json_tokener.c",
             "../printbuf.c",
-            "../json_object.c",
-            "../linkhash.c",
-            "../json_util.c"
+            "../json_object.c"
         ]
     }
 ]

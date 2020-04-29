@@ -32,3 +32,6 @@ $ cd $PROJECT_ROOT
 $ git clean -fxd
 $ tis-analyzer -tis-config-load tis.config -tis-config-select 1 --interpreter
 ```
+
+Some tests requires `TIS_ADVANCED_FLOAT=1`:
+- `test_cast`

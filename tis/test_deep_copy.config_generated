@@ -4,12 +4,13 @@
             "build"
         ],
         "files": [
-            "../tests/test_cast.c",
+            "../tests/test_deep_copy.c",
             "../json_tokener.c",
             "../printbuf.c",
             "../json_object.c",
             "../linkhash.c",
-            "../json_util.c"
+            "../json_util.c",
+            "../arraylist.c"
         ]
     }
 ]
