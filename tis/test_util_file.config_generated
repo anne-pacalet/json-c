@@ -10,7 +10,8 @@
             "../printbuf.c",
             "../json_tokener.c",
             "../json_object.c",
-            "../linkhash.c"
+            "../linkhash.c",
+            "../strerror_override.c"
         ],
         "filesystem": {
             "files": [
@@ -21,6 +22,9 @@
                 {
                     "from": "../tests/valid_nested.json",
                     "name": "./valid_nested.json"
+                },
+                {
+                    "name": "/dev/null"
                 }
             ]
         },
