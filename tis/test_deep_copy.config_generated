@@ -11,6 +11,9 @@
             "../linkhash.c",
             "../json_util.c",
             "../arraylist.c"
-        ]
+        ],
+        "raw_options": {
+            "-val-printf-singleton-pointers": true
+        }
     }
 ]
