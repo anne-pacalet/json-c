@@ -5,10 +5,10 @@
         ],
         "files": [
             "../tests/test2.c",
-            "../linkhash.c",
             "../json_tokener.c",
             "../printbuf.c",
             "../json_object.c",
+            "../linkhash.c",
             "../arraylist.c"
         ],
         "raw_options": {

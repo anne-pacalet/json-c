@@ -13,3 +13,6 @@ void *bsearch(const void *__key, const void *__base, size_t __nmemb,
   return NULL;
 }
 
+int __builtin_isnan(double d) {
+  return d != d;
+}

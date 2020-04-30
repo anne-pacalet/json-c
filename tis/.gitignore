@@ -1,5 +1,9 @@
 *.config_generated.json
 tis-mkfs-*.[ch]
+*.state
+*.diff
+*.log
+*.res
 build
 !build/compile_commands.json
 !build/*.h

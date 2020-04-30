@@ -5,11 +5,11 @@
         ],
         "files": [
             "../tests/test_object_iterator.c",
-            "../linkhash.c",
             "../json_object_iterator.c",
             "../json_tokener.c",
             "../printbuf.c",
             "../json_object.c",
+            "../linkhash.c",
             "../json_util.c"
         ],
         "raw_options": {

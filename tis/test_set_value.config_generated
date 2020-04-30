@@ -4,9 +4,12 @@
             "build"
         ],
         "files": [
+            "tis_stubs.c",
             "../tests/test_set_value.c",
             "../json_object.c",
-            "../printbuf.c"
+            "../printbuf.c",
+            "../json_tokener.c",
+            "../json_util.c"
         ]
     }
 ]

@@ -6,10 +6,10 @@
         "files": [
             "tis_stubs.c",
             "../tests/test1.c",
-            "../linkhash.c",
             "../json_object.c",
             "../printbuf.c",
-            "../arraylist.c"
+            "../arraylist.c",
+            "../linkhash.c"
         ],
         "raw_options": {
             "-val-args": " spaced pretty"

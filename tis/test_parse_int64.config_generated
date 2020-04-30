@@ -6,6 +6,7 @@
         "files": [
             "../tests/test_parse_int64.c",
             "../json_util.c"
-        ]
+        ],
+        "machdep": "gcc_x86_64"
     }
 ]
