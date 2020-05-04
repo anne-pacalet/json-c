@@ -7,12 +7,8 @@ void *bsearch(const void *__key, const void *__base, size_t __nmemb,
     int c = __compar(__key, p);
     if (c == 0)
       return p;
-    if (c > 0)
+    if (c < 0) // __key < p so if not before, not at all.
       break;
   }
   return NULL;
-}
-
-int __builtin_isnan(double d) {
-  return d != d;
 }

@@ -5,7 +5,22 @@ do_run=0
 do_filter=1
 do_diff=1
 
-for c in *.config ; do
+files=""
+while [[ $# -gt 0 ]] ; do
+  name="$1"
+  if [ -f "$name.config" ] ; then
+    files+=" $name.config"
+    shift
+  else
+    echo "ERROR: file not found $name.config"
+    exit 1
+  fi
+done
+if [ -z "$files" ] ; then
+  files=$(ls ./*.config)
+fi
+
+for c in $files ; do
   name="${c/.config}"
   echo "Process $name"
   if [[ $do_prepare -ne 0 || ! -f ${c}_generated ]] ; then
@@ -32,20 +47,24 @@ for c in *.config ; do
     echo -n "  filter..."
     awk -f <(cat - <<-'END'
 	/^\[value]/ { next; }
-	/^\[kernel]/ {next}
-	/^\[tis-mkfs]/ {next}
-	/\[time]/ { printf "\n"; exit}
+	/^\[kernel]/ { next; }
+	/^\[tis-mkfs]/ { next; }
 	/Too many arguments/,/ *main$/ { next; }
 	/but format indicates/,/ *main$/ { next; }
 	/register_new_file_in_dirent_niy/,/ *main$/ { next; }
 	/initialization of volatile variable/ { next; }
 	/integer overflow/ { next; }
 	/overflow or underflow/ { next; }
-        /^$/ { c++ ; next; }
-        { if (c == 0) printf "\n";
-	if (c >= 2) {
-          for ( ; c >= 2; c -= 2) printf "\n";
-          if (c == 1) printf "\n";
+	/invalid return value from json_c_visit/ {
+           /* this is printed on stderr so not in .expected */
+           next ;
+           }
+	/\[time]/ { printf "\n"; exit}
+	/^$/ { c++ ; next; }
+	{ if (c == 0) printf "\n";
+          if (c >= 2) {
+            for ( ; c >= 2; c -= 2) printf "\n";
+            if (c == 1) printf "\n";
           }
           c = 0; printf ("%s", $0);
         }
