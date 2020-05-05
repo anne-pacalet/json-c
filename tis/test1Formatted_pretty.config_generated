@@ -6,12 +6,14 @@
         "files": [
             "tis_stubs.c",
             "../tests/test1.c",
+            "../tests/parse_flags.c",
             "../json_object.c",
             "../printbuf.c",
             "../arraylist.c",
             "../linkhash.c"
         ],
         "raw_options": {
+            "-cpp-extra-args": "-DTEST_FORMATTED",
             "-val-args": " pretty"
         }
     }

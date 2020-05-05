@@ -2,8 +2,10 @@ Warning
 ========
 
 This is a fork https://github.com/json-c/json-c
-modified in order to be verified with [TrustInSoft
+**modified** in order to be verified with [TrustInSoft
 CI](https://ci.trust-in-soft.com/projects/anne-pacalet/json-c).
+
+**DO NOT USE IT.**
 
 ******************************************************************************
 

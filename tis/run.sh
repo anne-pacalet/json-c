@@ -7,17 +7,21 @@ do_diff=1
 
 files=""
 while [[ $# -gt 0 ]] ; do
-  name="$1"
-  if [ -f "$name.config" ] ; then
-    files+=" $name.config"
-    shift
-  else
-    echo "ERROR: file not found $name.config"
-    exit 1
-  fi
+  case "$1" in
+    *)
+      name="$1"
+      if [ -f "$name.config" ] ; then
+        files+=" $name.config"
+        shift
+      else
+        echo "ERROR: file not found $name.config"
+        exit 1
+      fi
+      ;;
+  esac
 done
 if [ -z "$files" ] ; then
-  files=$(ls ./*.config)
+  files=$(ls *.config)
 fi
 
 for c in $files ; do

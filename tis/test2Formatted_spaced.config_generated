@@ -5,6 +5,7 @@
         ],
         "files": [
             "../tests/test2.c",
+            "../tests/parse_flags.c",
             "../json_tokener.c",
             "../printbuf.c",
             "../json_object.c",
@@ -12,6 +13,7 @@
             "../arraylist.c"
         ],
         "raw_options": {
+            "-cpp-extra-args": "-DTEST_FORMATTED",
             "-val-args": " spaced"
         }
     }
