@@ -1,0 +1,15 @@
+[
+    {
+        "compilation_database": [
+            "build"
+        ],
+        "files": [
+            "tis_stubs.c",
+            "../tests/test1.c",
+            "../json_object.c",
+            "../printbuf.c",
+            "../arraylist.c",
+            "../linkhash.c"
+        ]
+    }
+]
