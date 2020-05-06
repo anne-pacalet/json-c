@@ -5,6 +5,8 @@ tis-mkfs-*.[ch]
 *.diff
 *.log
 *.res
+xunit.xml
+Jenkinsfile.new
 build
 !build/compile_commands.json
 !build/*.h
