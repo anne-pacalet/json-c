@@ -43,7 +43,7 @@ for c in $files ; do
     echo -n "  analyze..."
     TIS_ADVANCED_FLOAT=1 tis-analyzer \
       -tis-config-load ../tis.config -tis-config-select-by-name "$name" \
-      --interpreter -save "$name.state" > "$name.log"
+      --interpreter -save "$name.state" -info-csv-all "$name" > "$name.log"
     echo "ok."
     rm -f "$name.res"
   fi
@@ -53,6 +53,7 @@ for c in $files ; do
 	/^\[value]/ { next; }
 	/^\[kernel]/ { next; }
 	/^\[tis-mkfs]/ { next; }
+	/^\[info]/ { next; }
 	/Too many arguments/,/ *main$/ { next; }
 	/but format indicates/,/ *main$/ { next; }
 	/register_new_file_in_dirent_niy/,/ *main$/ { next; }

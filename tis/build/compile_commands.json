@@ -1,67 +1,67 @@
 [
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/arraylist.c.o   -c ../../arraylist.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/arraylist.c.o   -c ../../arraylist.c",
   "file": "../../arraylist.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/debug.c.o   -c ../../debug.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/debug.c.o   -c ../../debug.c",
   "file": "../../debug.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_c_version.c.o   -c ../../json_c_version.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_c_version.c.o   -c ../../json_c_version.c",
   "file": "../../json_c_version.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_object.c.o   -c ../../json_object.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_object.c.o   -c ../../json_object.c",
   "file": "../../json_object.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_object_iterator.c.o   -c ../../json_object_iterator.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_object_iterator.c.o   -c ../../json_object_iterator.c",
   "file": "../../json_object_iterator.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_pointer.c.o   -c ../../json_pointer.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_pointer.c.o   -c ../../json_pointer.c",
   "file": "../../json_pointer.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_tokener.c.o   -c ../../json_tokener.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_tokener.c.o   -c ../../json_tokener.c",
   "file": "../../json_tokener.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_util.c.o   -c ../../json_util.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_util.c.o   -c ../../json_util.c",
   "file": "../../json_util.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_visit.c.o   -c ../../json_visit.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/json_visit.c.o   -c ../../json_visit.c",
   "file": "../../json_visit.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/linkhash.c.o   -c ../../linkhash.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/linkhash.c.o   -c ../../linkhash.c",
   "file": "../../linkhash.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/printbuf.c.o   -c ../../printbuf.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/printbuf.c.o   -c ../../printbuf.c",
   "file": "../../printbuf.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/random_seed.c.o   -c ../../random_seed.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/random_seed.c.o   -c ../../random_seed.c",
   "file": "../../random_seed.c"
 },
 {
   "directory": ".",
-  "command": "/usr/bin/cc -DVALGRIND=1 -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/strerror_override.c.o   -c ../../strerror_override.c",
+  "command": "/usr/bin/cc -D_GNU_SOURCE -Djson_c_EXPORTS -I../.. -I../../tis/build   -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -g -fPIC   -D_REENTRANT -o CMakeFiles/json-c.dir/strerror_override.c.o   -c ../../strerror_override.c",
   "file": "../../strerror_override.c"
 },
 {

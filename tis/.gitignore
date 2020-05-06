@@ -1,6 +1,7 @@
 *.config_generated.json
 tis-mkfs-*.[ch]
 *.state
+*.csv
 *.diff
 *.log
 *.res

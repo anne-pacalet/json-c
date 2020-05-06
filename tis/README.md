@@ -6,11 +6,20 @@ $ cd json-c
 $ PROJECT_ROOT=$PWD
 $ mkdir tis && cd tis
 $ mkdir build && cd build
-$ VALGRIND=1 cmake ../.. -DCMAKE_EXPORT_COMPILE_COMMANDS=On
+$ cmake ../.. -DCMAKE_EXPORT_COMPILE_COMMANDS=On
 $ sed -i config.h -e '/HAVE_XLOCALE_H/d' \
                   -e '/HAVE_USELOCALE/d'
 $ make
 $ make USE_VALGRIND=0 test
+```
+
+
+## Preparation
+
+```
+$ tis-prepare all-symbol-table
+[INFO] Summary: 2+38/40 (100%) [OK+CACHED]   0/40 (0%) [SKIPPED]   0/40 (0%) [FAIL]
+$ tis-prepare clean
 ```
 
 To be able to use the `compile_commands.json` on GitHub,
@@ -19,13 +28,6 @@ the absolute paths have to be transformed into relative ones:
 ```
 $ sed -i compile_commands.json -e "s=$PROJECT_ROOT=../..=g" \
                                -e '/"directory"/s/.*/  "directory": ".",/'
-```
-
-## Preparation
-
-```
-$ tis-prepare all-symbol-table
-[INFO] Summary: 2+38/40 (100%) [OK+CACHED]   0/40 (0%) [SKIPPED]   0/40 (0%) [FAIL]
 ```
 
 Now for each `test_XXX` test in `$PROJECT_ROOT/test/*.expected`,
@@ -92,4 +94,12 @@ The `run.sh` script makes it easier to repeat all the steps:
 $ cd $PROJECT_ROOT/tis
 $ rm *.config_generated
 $ ./run.sh
+```
+
+## Coverage
+
+```
+$ tis-analyzer -tis-config-load empty.config \
+               -save empty.state -info-csv-all empty > empty.log
+$ tis-aggregate coverage json-c.aggreg > json-c.coverage
 ```
