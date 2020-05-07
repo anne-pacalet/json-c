@@ -37,7 +37,7 @@ pipeline {
                           grep -Po '[a-z0-9]* (?=utils/\$)' ) && \
                       tis_choose master && \
                       freq=${params.freq} timeout -k10s ${params.timeout} \
-                      /scripts/tis/jenkins.sh -f -v" \
+                      /scripts/tis/jenkins.sh -f -v -v" \
              """
         }
       }

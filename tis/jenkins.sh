@@ -120,10 +120,15 @@ run_test() {
 
   if [ $result -ne 0 ] ; then
     xunit_add_failed "$name" "failed with exit code: $result" "$output"
-  elif [ -s "$name.diff" ] ; then
-    xunit_add_error "$name" "diff not ok" "$(cat "$name.diff")"
   else
-    xunit_add_ok "$name"
+    config_diff=$(git diff "build/$name.config_generated")
+    if [ -n "$config_diff" ] ; then
+      xunit_add_error "config" "differences wit git version" "$config_diff"
+    elif [ -s "$name.diff" ] ; then
+      xunit_add_error "$name" "not the expected results" "$(cat "$name.diff")"
+    else
+      xunit_add_ok "$name"
+    fi
   fi
 }
 
@@ -131,12 +136,18 @@ run_tests() {
   local names ; names=$(./run.sh -l)
   if [ -n "$clean" ] ; then
     name=symbols
+    xunit_set_classname "$classname.$name"
     output="$( run "$name" -f -s )"
     result=$?
     if [ $result -ne 0 ] ; then
       xunit_add_failed "$name" "failed with exit code: $result" "$output"
     else
-      xunit_add_ok "$name"
+      cc_diff=$(git diff build/compile_commands.json)
+      if [ -n "$cc_diff" ] ; then
+        xunit_add_error "compile_commands" "differences" "$cc_diff"
+      else
+        xunit_add_ok "$name"
+      fi
     fi
   fi
 
