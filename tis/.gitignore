@@ -1,5 +1,5 @@
 *.config_generated.json
-tis-mkfs-*.[ch]
+__vfs-*.[ch]
 *.state
 *.csv
 *.diff

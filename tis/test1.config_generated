@@ -10,6 +10,9 @@
             "../printbuf.c",
             "../arraylist.c",
             "../linkhash.c"
-        ]
+        ],
+        "raw_options": {
+            "-cpp-extra-args": "-UTEST_FORMATTED"
+        }
     }
 ]
