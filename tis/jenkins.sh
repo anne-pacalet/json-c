@@ -121,7 +121,7 @@ run_test() {
   if [ $result -ne 0 ] ; then
     xunit_add_failed "$name" "failed with exit code: $result" "$output"
   else
-    config_diff=$(git diff "build/$name.config_generated")
+    config_diff=$(git diff -- "$name.config_generated")
     if [ -n "$config_diff" ] ; then
       xunit_add_error "config" "differences wit git version" "$config_diff"
     elif [ -s "$name.diff" ] ; then
