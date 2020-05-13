@@ -127,7 +127,7 @@ void sendMailNotif(who, results) {
     def title = "[jenkins] ${env.JOB_NAME} (${env.freq})" +
                 " - ${currentBuild.currentResult}"
     emailext subject: "$title",
-             to: "$mailto",
+             to: "${mailto}",
              replyTo: 'jenkins@trust-in-soft.com',
              body: "$msg"
   }
