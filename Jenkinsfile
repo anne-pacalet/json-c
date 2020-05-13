@@ -101,7 +101,7 @@ String prettyResults(results) {
 }
 
 void sendChatNotif(color, results) {
-    def chat_message = "<${env.JOB_URL}/${env.BUILD_NUMBER}|${env.JOB_NAME} #${env.BUILD_NUMBER>\n" +
+    def chat_message = "<${env.JOB_URL}/${env.BUILD_NUMBER}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\n" +
         prettyEnv() +
         prettyResults(results) +
         "${currentBuild.currentResult} after ${currentBuild.durationString.replace(' and counting', '')} " +
