@@ -47,7 +47,9 @@ pipeline {
     }
     stage('Test') {
       steps {
-        results = junit testResults: 'tis/xunit.xml'
+        script {
+          results = junit testResults: 'tis/xunit.xml'
+        }
       }
     }
   }
