@@ -142,7 +142,7 @@ run_tests() {
     if [ $result -ne 0 ] ; then
       xunit_add_failed "$name" "failed with exit code: $result" "$output"
     else
-      cc_diff=$(git diff build/compile_commands.json)
+      cc_diff=$(git diff -w build/compile_commands.json)
       if [ -n "$cc_diff" ] ; then
         xunit_add_error "compile_commands" "differences" "$cc_diff"
       else
