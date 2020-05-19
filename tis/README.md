@@ -7,10 +7,6 @@ The details of the steps can be found in [run.sh](./run.sh).
 
 ### Fixes
 
-- TAAS-426: should always set `TIS_ADVANCED_FLOAT=1`.
-
-- should be add `bsearch` in our libc (PR#3779)
-
 
 ## Coverage
 

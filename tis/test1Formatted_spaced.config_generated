@@ -4,7 +4,6 @@
             "build"
         ],
         "files": [
-            "tis_stubs.c",
             "../tests/test1.c",
             "../tests/parse_flags.c",
             "../json_object.c",
