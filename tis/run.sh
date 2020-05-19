@@ -93,7 +93,8 @@ if [[ $do_clean -ne 0 ]] ; then
   fi
   rm -f ./*.state ./*.log ./*.csv ./*.res ./*.diff
   rm -f ./*.config_generated.json
-  rm -f tis-mkfs-*.[ch]
+  rm -f __vfs-*.[ch]
+  rm -f Jenkinsfile.new xunit.xml
 
   git_clean=$(git clean -nxd)
   if [ -n "$git_clean" ] ; then
@@ -130,6 +131,10 @@ if [[ $do_symbols -ne 0 || ! -f build/tis_symbols.tbl ]] ; then
   if [ $do_symbols -ne 0 ] ; then
     exit 0
   fi
+  echo "Clean all the test.config_generated files"
+  for name in $test_names ; do
+    rm -f "$name.config_generated"
+  done
 fi
 
 #-------------------------------------------------------------------------------
